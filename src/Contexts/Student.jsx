@@ -90,7 +90,7 @@ const StudentProvider = ({ children }) => {
     setStudents(newStudentList);
   };
 
-  const contestValue = {
+  const contextValue = {
     studentName, setStudentName,
     updateMode, setUpdateMode,
     students, setStudents,
@@ -102,7 +102,7 @@ const StudentProvider = ({ children }) => {
   }
 
   return (
-    <StudentContext.Provider value={contestValue}>
+    <StudentContext.Provider value={contextValue}>
     {children}
     </StudentContext.Provider>);
 };
